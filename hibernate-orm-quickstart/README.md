@@ -68,7 +68,7 @@ First compile it:
 Next, make sure you have a PostgreSQL database running. In production, Quarkus does not start a container for you like it does in Dev Mode.
 To set up a PostgreSQL database with Docker:
 
-> docker run -it --rm=true --name quarkus_test -e POSTGRES_USER=quarkus_test -e POSTGRES_PASSWORD=quarkus_test -e POSTGRES_DB=quarkus_test -p 5432:5432 postgres:13.3
+> docker run -it --rm=true --name quarkus_test -e POSTGRES_USER=quarkus_test -e POSTGRES_PASSWORD=quarkus_test -e POSTGRES_DB=quarkus_test -p 5432:5432 docker.io/postgres:17
 
 Connection properties for the Agroal datasource are defined in the standard Quarkus configuration file,
 `src/main/resources/application.properties`.
